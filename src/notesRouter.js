@@ -60,7 +60,7 @@ notesRouter
     res.json(serializeFolders(res.folder))
 })
 .delete((req, res, next) => {
-const { noteid } = req.params
+const { noteid } = req.params.id
 notesService.deleteanitem(req.app.get('db'),noteid)
     .then(numRowsAffected => {
     logger.info(`Bookmark with id ${noteid} deleted.`)

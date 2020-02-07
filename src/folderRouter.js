@@ -63,7 +63,7 @@ folderRouter
 .delete((req, res, next) => {
     const  folderid  = req.params.id
     //console.log(req.params);
-    console.log(folderid);
+    //console.log(folderid);
     folderService.deleteanitem(req.app.get('db'),folderid)
         .then(numRowsAffected => {
         logger.info(`Bookmark with id ${folderid} deleted.`)

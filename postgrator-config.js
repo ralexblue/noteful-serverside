@@ -9,4 +9,5 @@ module.exports = {
   "connectionString": (NODE_ENV === 'test')
      ? TEST_DATABASE_URL
      : DATABASE_URL,
+     "ssl": !!process.env.SSL,
 }

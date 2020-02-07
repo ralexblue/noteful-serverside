@@ -131,21 +131,24 @@ describe('notes endpoint',()=>{
             .delete(`/api/folders/${nothingId}`)
             .expect(404,{ error: { message: `Folder Not Found` }})
         })
-        context('given there are articles in the database to delete',()=>{
+        context('given there are folders in the database to delete',()=>{
             beforeEach('insert test folder data and notes data',()=>{
                 return db.into('folders').insert(testFolders)
                 .then(()=>db.into('notes').insert(testNotes))
 
             })
             //describe('Delete a folder',()=>{
-                it('will delete a folder',()=>{
+                it('will delete a folder',function(done){
+                    this.timeout(30000);
                     const folderidToDelete = 1;
                     const expectedFolders = testFolders.filter(folder=>folder.id!==folderidToDelete);
                     //console.log(expectedFolders);
+                    
                     return supertest(app)
                     .delete(`/api/folders/${folderidToDelete}`)
                     .expect(204)
                     .then(res=>{
+                        setTimeout(done, 30000);
                         supertest(app)
                         .get('/api/folders')
                         .expect(expectedFolders)
