@@ -53,17 +53,20 @@ notesRouter
                 error: { message: `Note Not Found` }
               })
         }
+        res.note=note;
+        next();
     })
     .catch(next)
 })
 .get((req,res)=>{
-    res.json(serializeFolders(res.folder))
+    res.json(serializeNotes(res.note))
 })
 .delete((req, res, next) => {
-const { noteid } = req.params.id
-notesService.deleteanitem(req.app.get('db'),noteid)
+const { id } = req.params
+console.log(id);
+notesService.deleteanitem(req.app.get('db'),id)
     .then(numRowsAffected => {
-    logger.info(`Bookmark with id ${noteid} deleted.`)
+    logger.info(`note with id ${id} deleted.`)
     res.status(204).end()
     })
     .catch(next)
@@ -80,7 +83,7 @@ notesService.deleteanitem(req.app.get('db'),noteid)
         }
         })
     }
-    notesService.updateitem(req.app.get('db'),req.params.folderid,NoteToUpdate)
+    notesService.updateitem(req.app.get('db'),req.params.id,NoteToUpdate)
     .then(numRowsAffected => {
         res.status(204).end()
         })

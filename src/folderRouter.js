@@ -54,6 +54,8 @@ folderRouter
                 error: { message: `Folder Not Found` }
               })
         }
+        res.folder = folder;
+        next();
     })
     .catch(next)
 })
@@ -63,27 +65,28 @@ folderRouter
 .delete((req, res, next) => {
     const  folderid  = req.params.id
     //console.log(req.params);
-    //console.log(folderid);
+    console.log(folderid);
     folderService.deleteanitem(req.app.get('db'),folderid)
         .then(numRowsAffected => {
-        logger.info(`Bookmark with id ${folderid} deleted.`)
-        res.status(204).end()
+            logger.info(`Bookmark with id ${folderid} deleted.`)
+            res.status(204).end()
+
         })
         .catch(next)
 })
 .patch(bodyParser, (req, res, next) => {
     const {title} = req.body
+    //console.log(title);
     const folderToUpdate = title;
-    const numberOfValues = Object.values(folderToUpdate).filter(Boolean).length
-    if (numberOfValues === 0) {
+    if (!title) {
         return res.status(400).json({
         error: {
             message: `Request body must contain either 'title'`
         }
         })
     }
-
-    folderService.updateitem(req.app.get('db'),req.params.folderid,folderToUpdate)
+//console.log(req.params.id)
+    folderService.updateitem(req.app.get('db'),req.params.id,folderToUpdate)
     .then(numRowsAffected => {
         res.status(204).end()
         })

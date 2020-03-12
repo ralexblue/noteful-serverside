@@ -15,9 +15,9 @@ const folderService={
         return knex.from('folders').select('*').where('id',id).first()
     },
     deleteanitem(knex,id){
-        return knex('folders')
-        .where({id})
-        .delete()
+        return knex.raw(`
+            DELETE from folders where id=${id}
+        `)
     },
     updateitem(knex,id,newupdatefield){
         return knex('folders')

@@ -8,8 +8,6 @@ const app = express();
 const logger = require('./logger');
 const folderRouter = require('./folderRouter')
 const notesRouter=require('./notesRouter')
-
-
 const morganOption = NODE_ENV === 'production'
   ? 'tiny'
   : 'common';

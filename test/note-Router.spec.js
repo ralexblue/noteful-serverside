@@ -138,17 +138,14 @@ describe('notes endpoint',()=>{
 
             })
             //describe('Delete a folder',()=>{
-                it('will delete a folder',function(done){
-                    this.timeout(30000);
+                it('will delete a folder',()=>{
                     const folderidToDelete = 1;
                     const expectedFolders = testFolders.filter(folder=>folder.id!==folderidToDelete);
                     //console.log(expectedFolders);
-                    
                     return supertest(app)
                     .delete(`/api/folders/${folderidToDelete}`)
                     .expect(204)
                     .then(res=>{
-                        setTimeout(done, 30000);
                         supertest(app)
                         .get('/api/folders')
                         .expect(expectedFolders)
@@ -158,7 +155,7 @@ describe('notes endpoint',()=>{
 
             //describe('Delete a note in a folder',()=>{
                 it('will delete a note',()=>{
-                    const noteidToDelete = 1;
+                    const noteidToDelete = 3;
                     const expectedNotes = testNotes.filter(note=>note.id!==noteidToDelete);
                     return supertest(app)
                     .delete(`/api/notes/${noteidToDelete}`)

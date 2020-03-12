@@ -247,3 +247,71 @@
 {"message":"Folder with id 123456 not found","level":"error"}
 {"message":"Folder with id 123456 not found","level":"error"}
 {"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"added folder with id 2","level":"info"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"added folder with id 2","level":"info"}
+{"message":"added folder with id 3","level":"info"}
+{"message":"added folder with id 4","level":"info"}
+{"message":"added folder with id 5","level":"info"}
+{"message":"Bookmark with id 4 deleted.","level":"info"}
+{"message":"Folder with id 4 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 4 not found","level":"error"}
+{"message":"note with id 2 deleted.","level":"info"}
+{"message":"Title is required","level":"error"}
+{"message":"added folder with id 1","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"note with id 3 deleted.","level":"info"}
+{"message":"Folder with id 123456 not found","level":"error"}
+{"message":"Folder with id 123456 not found","level":"error"}
